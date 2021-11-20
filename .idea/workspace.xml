@@ -127,16 +127,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1636992305016</updated>
+<<<<<<< HEAD
       <workItem from="1636992313078" duration="1526000" />
       <workItem from="1636994168855" duration="253000" />
       <workItem from="1636994423204" duration="377000" />
       <workItem from="1636995326736" duration="2587000" />
+=======
+      <workItem from="1636992313078" duration="6147000" />
+>>>>>>> cfd94f1b9258919ef3de3dcca8efc793149e9158
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+<<<<<<< HEAD
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -147,5 +152,20 @@
         </entry>
       </map>
     </option>
+=======
+  <component name="WindowStateProjectService">
+    <state x="1073" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1636992865468">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1073" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1040/2560.0.1920.1040/4480.0.1920.1040@0.0.2560.1040" timestamp="1636992865468" />
+    <state x="1026" y="243" key="NewPhpClassDialog" timestamp="1636995694106">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1026" y="243" key="NewPhpClassDialog/0.0.2560.1040/2560.0.1920.1040/4480.0.1920.1040@0.0.2560.1040" timestamp="1636995694106" />
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1636998014275">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1040/2560.0.1920.1040/4480.0.1920.1040@0.0.2560.1040" timestamp="1636998014275" />
+>>>>>>> cfd94f1b9258919ef3de3dcca8efc793149e9158
   </component>
 </project>

@@ -30,23 +30,31 @@ class Book {
      */
     private $author;
     /**
-     * @ORM\Column(type="boolean")
+     * @ORM\Column(type="text")
      * @Assert\NotBlank()
+     *
+     */
+    private $description;
+    /**
+     * @ORM\Column(type="boolean", nullable="true")
      *
      */
     private $borrowed;
     /**
-     * @ORM\Column(type="integer")
-     * @Assert\NotBlank()
+     * @ORM\Column(type="integer", nullable="true")
      *
      */
     private $userid;
     /**
-     * @ORM\Column(type="date")
-     * @Assert\NotBlank()
+     * @ORM\Column(type="date", nullable="true")
      *
      */
     private $BorrowDate;
+    /**
+     * @ORM\Column(type="text", nullable="true")
+     *
+     */
+    private $coverurl;
 
     /**
      * @return mixed
@@ -99,6 +107,22 @@ class Book {
     /**
      * @return mixed
      */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param mixed $description
+     */
+    public function setDescription($description): void
+    {
+        $this->description = $description;
+    }
+
+    /**
+     * @return mixed
+     */
     public function getBorrowed()
     {
         return $this->borrowed;
@@ -144,6 +168,22 @@ class Book {
     public function setBorrowDate($BorrowDate): void
     {
         $this->BorrowDate = $BorrowDate;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCoverurl()
+    {
+        return $this->coverurl;
+    }
+
+    /**
+     * @param mixed $coverurl
+     */
+    public function setCoverurl($coverurl): void
+    {
+        $this->coverurl = $coverurl;
     }
 
 
