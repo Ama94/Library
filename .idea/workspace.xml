@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -145,6 +142,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/security-guard" />
       <path value="$PROJECT_DIR$/vendor/lexik/jwt-authentication-bundle" />
       <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/clock" />
       <path value="$PROJECT_DIR$/vendor/symfony/maker-bundle" />
       <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
       <path value="$PROJECT_DIR$/vendor/twig/twig" />
@@ -162,9 +160,6 @@
       <path value="$PROJECT_DIR$/vendor/symfony/web-link" />
       <path value="$PROJECT_DIR$/vendor/symfony/twig-bridge" />
       <path value="$PROJECT_DIR$/vendor/api-platform/core" />
-      <path value="$PROJECT_DIR$/vendor/symfony/apache-pack" />
-      <path value="$PROJECT_DIR$/vendor/laminas/laminas-zendframework-bridge" />
-      <path value="$PROJECT_DIR$/vendor/laminas/laminas-eventmanager" />
     </include_path>
   </component>
   <component name="ProjectId" id="20xhmQPAAySijKiY9acbBNDoUAX" />
@@ -177,7 +172,6 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -190,8 +184,7 @@
       <updated>1636992305016</updated>
       <workItem from="1636992313078" duration="6147000" />
       <workItem from="1637533642042" duration="9192000" />
-      <workItem from="1637569120699" duration="4856000" />
-      <workItem from="1637656377488" duration="4819000" />
+      <workItem from="1637569120699" duration="1399000" />
     </task>
     <servers />
   </component>
@@ -227,10 +220,6 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="1026" y="243" key="NewPhpClassDialog/0.0.2560.1040/2560.0.1920.1040/4480.0.1920.1040@0.0.2560.1040" timestamp="1637534647307" />
-    <state x="908" y="107" key="SettingsEditor" timestamp="1637660207950">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
-    <state x="908" y="107" key="SettingsEditor/0.0.2560.1040/2560.0.1920.1040/4480.0.1920.1040@0.0.2560.1040" timestamp="1637660207950" />
     <state x="1028" y="254" key="VcsDiffUtil.ChangesDialog" timestamp="1637542703624">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
