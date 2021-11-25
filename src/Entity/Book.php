@@ -22,13 +22,39 @@ class Book {
      * @Assert\NotBlank()
      *
      */
-    private $name;
+    private $title;
+    /**
+     * @ORM\Column(type="text")
+     * @Assert\NotBlank()
+     *
+     */
+    private $author;
     /**
      * @ORM\Column(type="text")
      * @Assert\NotBlank()
      *
      */
     private $description;
+    /**
+     * @ORM\Column(type="boolean", nullable="true")
+     *
+     */
+    private $borrowed;
+    /**
+     * @ORM\Column(type="integer", nullable="true")
+     *
+     */
+    private $userid;
+    /**
+     * @ORM\Column(type="date", nullable="true")
+     *
+     */
+    private $BorrowDate;
+    /**
+     * @ORM\Column(type="text", nullable="true")
+     *
+     */
+    private $coverurl;
 
     /**
      * @return mixed
@@ -49,17 +75,33 @@ class Book {
     /**
      * @return mixed
      */
-    public function getName()
+    public function getTitle()
     {
-        return $this->name;
+        return $this->title;
     }
 
     /**
-     * @param mixed $name
+     * @param mixed $title
      */
-    public function setName($name): void
+    public function setTitle($title): void
     {
-        $this->name = $name;
+        $this->title = $title;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getAuthor()
+    {
+        return $this->author;
+    }
+
+    /**
+     * @param mixed $author
+     */
+    public function setAuthor($author): void
+    {
+        $this->author = $author;
     }
 
     /**
@@ -77,6 +119,74 @@ class Book {
     {
         $this->description = $description;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getBorrowed()
+    {
+        return $this->borrowed;
+    }
+
+    /**
+     * @param mixed $borrowed
+     */
+    public function setBorrowed($borrowed): void
+    {
+        $this->borrowed = $borrowed;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getUserid()
+    {
+        return $this->userid;
+    }
+
+    /**
+     * @param mixed $userid
+     */
+    public function setUserid($userid): void
+    {
+        $this->userid = $userid;
+    }
+
+
+
+    /**
+     * @return mixed
+     */
+    public function getBorrowDate()
+    {
+        return $this->BorrowDate;
+    }
+
+    /**
+     * @param mixed $BorrowDate
+     */
+    public function setBorrowDate($BorrowDate): void
+    {
+        $this->BorrowDate = $BorrowDate;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCoverurl()
+    {
+        return $this->coverurl;
+    }
+
+    /**
+     * @param mixed $coverurl
+     */
+    public function setCoverurl($coverurl): void
+    {
+        $this->coverurl = $coverurl;
+    }
+
+
 
 
 

@@ -52,4 +52,54 @@ class BookController extends AbstractFOSRestController
         return $this->handleView($this->view($form->getErrors()));
     }
 
+    /**
+     *Create Book.
+     *@Rest\Post("/book/borrow/{id}")
+     *
+     *@return Response
+     */
+    public function borrow($id){
+        $entitymanager = $this -> getDoctrine() -> getManager();
+        $book = $this -> getDoctrine() -> getRepository(Book::class)
+            -> find($id);
+        $book -> setborrowed(1);
+        $book -> setBorrowDate(new \DateTime());
+        $entitymanager -> flush();
+        return $this->handleView($this->view($book));
+    }
+
+    /**
+     *Create Book.
+     *@Rest\Post("/book/return/{id}")
+     *
+     *@return Response
+     */
+    public function return($id){
+        $entitymanager = $this -> getDoctrine() -> getManager();
+        $book = $this -> getDoctrine() -> getRepository(Book::class)
+            -> find($id);
+        $book -> setborrowed(0);
+        $book -> setBorrowDate(null);
+        $entitymanager -> flush();
+        return $this->handleView($this->view($book));
+    }
+
+    /**
+     *Lists all Books.
+     *@Rest\Get("/overdue")
+     *
+     *@return Response
+     */
+    public function getOverdueBooksAction()
+    {
+        $dateTime = new \DateTime();
+        $dateTime->modify('-30 day');
+        $repository = $this->getDoctrine()->getRepository(Book::class);
+//        $books = $repository->findBy($dateTime);
+        $books = $this->getDoctrine()
+            ->getManager()
+            ->createQuery('SELECT * FROM book WHERE DATEDIFF(current_timestamp(), BorrowDate)>30;')
+            ->getResult();
+        return $this->handleView($this->view($books));
+    }
 }
