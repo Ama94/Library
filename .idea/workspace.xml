@@ -20,7 +20,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b750ec2c-940d-4144-aa6d-b0e3dc3122a1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/AboutController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/RodoController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/About.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/News.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Offer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Rodo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/AboutType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/RodoType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/App_KernelDevDebugContainer.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/App_KernelDevDebugContainer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/App_KernelDevDebugContainer.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/App_KernelDevDebugContainer.php.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/App_KernelDevDebugContainer.preload.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/App_KernelDevDebugContainer.preload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/App_KernelDevDebugContainer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/App_KernelDevDebugContainer.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/App_KernelDevDebugContainer.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/App_KernelDevDebugContainer.xml.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/App_KernelDevDebugContainerCompiler.log" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/App_KernelDevDebugContainerCompiler.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/fos_rest/allowed_methods.cache.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/fos_rest/allowed_methods.cache.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/fos_rest/allowed_methods.cache.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/fos_rest/allowed_methods.cache.php.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/url_generating_routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/url_generating_routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/url_generating_routes.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/url_generating_routes.php.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/url_matching_routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/url_matching_routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/url_matching_routes.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/url_matching_routes.php.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,9 +183,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Controller" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ama\Documents\Library\src\Controller" />
+      <recent name="C:\Users\Ama\Documents\Library\src\Form" />
+      <recent name="C:\Users\Ama\Documents\Library\src\Entity" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -177,7 +205,9 @@
       <workItem from="1636992313078" duration="6147000" />
       <workItem from="1637533642042" duration="9192000" />
       <workItem from="1637569120699" duration="1399000" />
-      <workItem from="1637796919058" duration="906000" />
+      <workItem from="1637796919058" duration="1101000" />
+      <workItem from="1639740692227" duration="4695000" />
+      <workItem from="1639748980081" duration="752000" />
     </task>
     <servers />
   </component>
@@ -197,21 +227,24 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1073" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1636992865468">
+    <state x="1073" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1639742117421">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
+    <state x="1073" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1040/2560.0.1920.1040/-3840.0.1920.1040@0.0.2560.1040" timestamp="1639742117421" />
     <state x="1073" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1040/2560.0.1920.1040/4480.0.1920.1040@0.0.2560.1040" timestamp="1636992865468" />
     <state x="80" y="65" width="2376" height="856" key="DiffContextDialog" timestamp="1637793885525">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="80" y="65" width="2376" height="856" key="DiffContextDialog/0.0.2560.1040/2560.0.1920.1040/4480.0.1920.1040@0.0.2560.1040" timestamp="1637793885525" />
-    <state x="1060" y="275" key="FileChooserDialogImpl" timestamp="1637534392391">
+    <state x="1060" y="275" key="FileChooserDialogImpl" timestamp="1639741410720">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
+    <state x="1060" y="275" key="FileChooserDialogImpl/0.0.2560.1040/2560.0.1920.1040/-3840.0.1920.1040@0.0.2560.1040" timestamp="1639741410720" />
     <state x="1060" y="275" key="FileChooserDialogImpl/0.0.2560.1040/2560.0.1920.1040/4480.0.1920.1040@0.0.2560.1040" timestamp="1637534392391" />
-    <state x="1026" y="243" key="NewPhpClassDialog" timestamp="1637534647307">
+    <state x="1026" y="243" key="NewPhpClassDialog" timestamp="1639742150585">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
+    <state x="1026" y="243" key="NewPhpClassDialog/0.0.2560.1040/2560.0.1920.1040/-3840.0.1920.1040@0.0.2560.1040" timestamp="1639742150585" />
     <state x="1026" y="243" key="NewPhpClassDialog/0.0.2560.1040/2560.0.1920.1040/4480.0.1920.1040@0.0.2560.1040" timestamp="1637534647307" />
     <state x="1028" y="254" key="VcsDiffUtil.ChangesDialog" timestamp="1637793756730">
       <screen x="0" y="0" width="2560" height="1040" />
