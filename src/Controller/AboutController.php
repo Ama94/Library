@@ -37,69 +37,18 @@ class AboutController extends AbstractFOSRestController
      *
      *@return Response
      */
-    public function postBookAction(Request $request)
+    public function postAboutAction(Request $request)
     {
-        $book = new About();
-        $form = $this->createForm(AboutType::class, $book);
+        $about = new About();
+        $form = $this->createForm(AboutType::class, $about);
         $data = json_decode($request->getContent(), true);
         $form->submit($data);
         if($form->isSubmitted() && $form->isValid()) {
             $em = $this->getDoctrine()->getManager();
-            $em->persist($book);
+            $em->persist($about);
             $em->flush();
             return $this->handleView($this->view(['status' => 'ok'], Response::HTTP_CREATED));
         }
         return $this->handleView($this->view($form->getErrors()));
-    }
-
-    /**
-     *Create Book.
-     *@Rest\Post("/book/borrow/{id}")
-     *
-     *@return Response
-     */
-    public function borrow($id){
-        $entitymanager = $this -> getDoctrine() -> getManager();
-        $book = $this -> getDoctrine() -> getRepository(Book::class)
-            -> find($id);
-        $book -> setborrowed(1);
-        $book -> setBorrowDate(new \DateTime());
-        $entitymanager -> flush();
-        return $this->handleView($this->view($book));
-    }
-
-    /**
-     *Create Book.
-     *@Rest\Post("/book/return/{id}")
-     *
-     *@return Response
-     */
-    public function return($id){
-        $entitymanager = $this -> getDoctrine() -> getManager();
-        $book = $this -> getDoctrine() -> getRepository(Book::class)
-            -> find($id);
-        $book -> setborrowed(0);
-        $book -> setBorrowDate(null);
-        $entitymanager -> flush();
-        return $this->handleView($this->view($book));
-    }
-
-    /**
-     *Lists all Books.
-     *@Rest\Get("/overdue")
-     *
-     *@return Response
-     */
-    public function getOverdueBooksAction()
-    {
-        $dateTime = new \DateTime();
-        $dateTime->modify('-30 day');
-        $repository = $this->getDoctrine()->getRepository(Book::class);
-//        $books = $repository->findBy($dateTime);
-        $books = $this->getDoctrine()
-            ->getManager()
-            ->createQuery('SELECT * FROM book WHERE DATEDIFF(current_timestamp(), BorrowDate)>30;')
-            ->getResult();
-        return $this->handleView($this->view($books));
     }
 }

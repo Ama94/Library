@@ -20,22 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b750ec2c-940d-4144-aa6d-b0e3dc3122a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/AboutController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/RodoController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/About.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/News.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Offer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Rodo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/AboutType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/RodoType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/NewsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/SingleNewsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/NewsType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AboutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AboutController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/News.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/News.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/cache/dev/App_KernelDevDebugContainer.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/App_KernelDevDebugContainer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/cache/dev/App_KernelDevDebugContainer.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/App_KernelDevDebugContainer.php.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/cache/dev/App_KernelDevDebugContainer.preload.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/App_KernelDevDebugContainer.preload.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/cache/dev/App_KernelDevDebugContainer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/App_KernelDevDebugContainer.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/cache/dev/App_KernelDevDebugContainer.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/App_KernelDevDebugContainer.xml.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/cache/dev/App_KernelDevDebugContainerCompiler.log" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/App_KernelDevDebugContainerCompiler.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/App_KernelDevDebugContainerDeprecations.log" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/App_KernelDevDebugContainerDeprecations.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/annotations.map" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/annotations.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/cache/dev/fos_rest/allowed_methods.cache.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/fos_rest/allowed_methods.cache.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/cache/dev/fos_rest/allowed_methods.cache.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/fos_rest/allowed_methods.cache.php.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/cache/dev/url_generating_routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/url_generating_routes.php" afterDir="false" />
@@ -176,6 +175,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="20xhmQPAAySijKiY9acbBNDoUAX" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -189,6 +191,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Larwa\Desktop\PROJEKT\Library\src\Controller" />
+      <recent name="C:\Users\Larwa\Desktop\PROJEKT\Library\src\Form" />
       <recent name="C:\Users\Ama\Documents\Library\src\Controller" />
       <recent name="C:\Users\Ama\Documents\Library\src\Form" />
       <recent name="C:\Users\Ama\Documents\Library\src\Entity" />
@@ -225,42 +229,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="1073" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1639742117421">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
-    <state x="1073" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1040/2560.0.1920.1040/-3840.0.1920.1040@0.0.2560.1040" timestamp="1639742117421" />
-    <state x="1073" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1040/2560.0.1920.1040/4480.0.1920.1040@0.0.2560.1040" timestamp="1636992865468" />
-    <state x="80" y="65" width="2376" height="856" key="DiffContextDialog" timestamp="1637793885525">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
-    <state x="80" y="65" width="2376" height="856" key="DiffContextDialog/0.0.2560.1040/2560.0.1920.1040/4480.0.1920.1040@0.0.2560.1040" timestamp="1637793885525" />
-    <state x="1060" y="275" key="FileChooserDialogImpl" timestamp="1639741410720">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
-    <state x="1060" y="275" key="FileChooserDialogImpl/0.0.2560.1040/2560.0.1920.1040/-3840.0.1920.1040@0.0.2560.1040" timestamp="1639741410720" />
-    <state x="1060" y="275" key="FileChooserDialogImpl/0.0.2560.1040/2560.0.1920.1040/4480.0.1920.1040@0.0.2560.1040" timestamp="1637534392391" />
-    <state x="1026" y="243" key="NewPhpClassDialog" timestamp="1639742150585">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
-    <state x="1026" y="243" key="NewPhpClassDialog/0.0.2560.1040/2560.0.1920.1040/-3840.0.1920.1040@0.0.2560.1040" timestamp="1639742150585" />
-    <state x="1026" y="243" key="NewPhpClassDialog/0.0.2560.1040/2560.0.1920.1040/4480.0.1920.1040@0.0.2560.1040" timestamp="1637534647307" />
-    <state x="1028" y="254" key="VcsDiffUtil.ChangesDialog" timestamp="1637793756730">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
-    <state x="1028" y="254" key="VcsDiffUtil.ChangesDialog/0.0.2560.1040/2560.0.1920.1040/4480.0.1920.1040@0.0.2560.1040" timestamp="1637793756730" />
-    <state x="1094" y="414" key="git4idea.ui.GitResetDialog" timestamp="1637533924619">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
-    <state x="1094" y="414" key="git4idea.ui.GitResetDialog/0.0.2560.1040/2560.0.1920.1040/4480.0.1920.1040@0.0.2560.1040" timestamp="1637533924619" />
-    <state x="1094" y="419" key="git4idea.ui.GitStashDialog" timestamp="1637533970113">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
-    <state x="1094" y="419" key="git4idea.ui.GitStashDialog/0.0.2560.1040/2560.0.1920.1040/4480.0.1920.1040@0.0.2560.1040" timestamp="1637533970113" />
-    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1636998014275">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
-    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1040/2560.0.1920.1040/4480.0.1920.1040@0.0.2560.1040" timestamp="1636998014275" />
   </component>
 </project>

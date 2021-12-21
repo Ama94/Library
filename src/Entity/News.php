@@ -32,10 +32,10 @@ class News {
      */
     private $description;
     /**
-     * @ORM\Column(type="date", nullable="true")
+     * @ORM\Column(type="text", nullable="true")
      *
      */
-    private $Date;
+    private $newsDate;
     /**
      * @ORM\Column(type="text", nullable="true")
      *
@@ -45,7 +45,7 @@ class News {
      * @ORM\Column(type="text", nullable="true")
      *
      */
-    private $Images;
+    private $images;
 
     /**
      * @return mixed
@@ -98,17 +98,17 @@ class News {
     /**
      * @return mixed
      */
-    public function getDate()
+    public function getNewsDate()
     {
-        return $this->Date;
+        return $this->newsDate;
     }
 
     /**
-     * @param mixed $Date
+     * @param mixed $newsDate
      */
-    public function setDate($Date): void
+    public function setNewsDate($newsDate): void
     {
-        $this->Date = $Date;
+        $this->newsDate = $newsDate;
     }
 
     /**
@@ -132,15 +132,14 @@ class News {
      */
     public function getImages()
     {
-        return $this->Images;
+        return $this->images;
     }
 
     /**
      * @param mixed $Images
      */
-    public function setImages($Images): void
+    public function setImages($images): void
     {
-        $this->Images = $Images;
+        $this->images = $images;
     }
-
 }
